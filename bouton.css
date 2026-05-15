@@ -1,0 +1,66 @@
+:root {
+  --primary-color-dark: #FDAB1C;
+  --primary-color-light: #8d182b;
+  --hover-color-dark: #fed081;
+  --hover-color-light: #db2e4a;
+  --text-color-primary-dark: #1a0f11;
+  --text-color-primary-light: #f1ede6;
+  --spacing: 8px;
+  --radius: 8px;
+}
+
+/*BOUTONS*/
+/*apparences*/
+.btn-dark {
+  width: 96px;
+  height: 38px;
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-primary-dark);
+  margin: var(--spacing);
+  border-radius: var(--radius);
+  border: none;
+}
+
+.btn-light {
+  width: 96px;
+  height: 38px;
+  background-color: var(--primary-color-light);
+  color: var(--text-color-primary-light);
+  margin: var(--spacing);
+  border-radius: var(--radius);
+  border: none;
+}
+
+/*States*/
+/*Hover*/
+.btn-dark:hover {
+  background-color: var(--hover-color-dark);
+}
+
+.btn-light:hover {
+  background-color: var(--hover-color-light);
+}
+
+/*focus*/
+.btn-dark:focus-visible {
+  outline: 1px solid var(--text-color-primary-dark);
+  outline-offset: -2px;
+}
+
+.btn-light:focus-visible {
+  outline: 1px solid var(--text-color-primary-light);
+  outline-offset: -2px;
+}
+
+/*
+
+        /*disabled*/
+.btn-dark:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-light:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}/*# sourceMappingURL=bouton.css.map */

@@ -1,0 +1,74 @@
+@import "variables";
+
+:root {
+    --primary-color-dark: #{$yellow-500};
+    --primary-color-light: #{$red-700};
+    --hover-color-dark: #{$yellow-400};
+    --hover-color-light: #{$red-600};
+    --text-color-primary-dark: #{$neutral-900};
+    --text-color-primary-light: #{$neutral-100};
+    --spacing: #{$spacing-2};
+    --radius: #{$radius-md};
+}
+
+/*BOUTONS*/
+
+    /*apparences*/
+
+.btn-dark {
+width: 96px;
+height: 38px;
+background-color: var(--primary-color-dark);
+color: var(--text-color-primary-dark);
+margin : var(--spacing);
+border-radius: var(--radius);
+border: none;
+}
+
+.btn-light {
+width: 96px;
+height: 38px;
+background-color: var(--primary-color-light);
+color: var(--text-color-primary-light);
+margin : var(--spacing);
+border-radius: var(--radius);
+border: none;
+}
+
+    /*States*/
+
+        /*Hover*/
+
+.btn-dark:hover {
+background-color: var(--hover-color-dark);
+}   
+
+.btn-light:hover {
+background-color: var(--hover-color-light);
+}
+
+        /*focus*/
+
+.btn-dark:focus-visible {
+outline: 1px solid var(--text-color-primary-dark);
+outline-offset: -2px;
+}
+
+.btn-light:focus-visible {
+outline: 1px solid var(--text-color-primary-light);
+outline-offset: -2px;  
+}
+
+/*
+
+        /*disabled*/
+
+.btn-dark:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-light:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
