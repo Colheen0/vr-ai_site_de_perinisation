@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://db.onlinewebfonts.com/c/0d2e0589d03cfc34ae25f7e045ec3a8f?family=SquareSerif-Demi" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/fb69990708893276bdb20a98eb2e06d3?family=General+Sans+Semibold" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/25c8b884ca555f338df57a70ee6d539c?family=General+Sans+Medium" rel="stylesheet">
@@ -23,15 +23,6 @@
     <button class="btn" disabled>
         disabled
     </button>
-
-    <script>
-        const buttonToggle = document.querySelector('[data-theme-toggle]');
-        const htmlElement = document.documentElement;
-        buttonToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            htmlElement.setAttribute('data-theme', newTheme);
-        });
-    </script>
+    <script src="scripts/theme-toggle.js"></script>
 </body>
 </html>
