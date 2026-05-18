@@ -1,0 +1,47 @@
+@import "variables.css";
+
+:root {
+    --color: var(--primary-color);
+    --hover-color: var(--primary-color-hover);
+    --text-color-primary: var(--text-primary);
+    --spacing: var(--spacing-2);
+    --radius: var(--radius-md);
+}
+
+/*BOUTONS*/
+
+    /*apparences*/
+
+.btn {
+width: 96px;
+height: 38px;
+background-color: var(--color);
+color: var(--text-color-primary);
+margin : var(--spacing);
+border-radius: var(--radius);
+border: none;
+transition: background-color 0.3s ease;
+cursor: pointer;
+}
+    /*States*/
+
+        /*Hover*/
+
+.btn:hover {
+background-color: var(--hover-color);
+}   
+
+        /*focus*/
+
+.btn:focus-visible {
+outline: 1px solid var(--text-color-primary);
+outline-offset: -2px;
+}
+/*
+
+        /*disabled*/
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
