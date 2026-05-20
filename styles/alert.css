@@ -1,0 +1,32 @@
+@import"variable.css";
+
+:root {
+    --color-error-bg: var(--error-bg);
+    --color-info-bg: var(--info-bg);
+    --color-error-border: var(--error-border);
+    --color-info-border: var(--info-border);
+    --color-error-text: var(--error-text);
+    --color-info-text: var(--info-text);
+    --spacing: var(--spacing-4);
+    --radius: var(--radius-md);
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing);
+    margin: var(--spacing);
+    border-radius: var(--radius);
+}
+
+.info {
+    background-color: var(--color-info-bg);
+    border: 2px solid var(--color-info-border);
+    color: var(--color-info-text);
+}
+
+.error {
+    background-color: var(--color-error-bg);
+    border: 2px solid var(--color-error-border);
+    color: var(--color-error-text);
+}

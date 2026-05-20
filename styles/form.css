@@ -1,0 +1,24 @@
+@import"variable.css";
+
+:root {
+    --color-error-bg: var(--error-bg);
+    --color-info-bg: var(--info-bg);
+    --color-error-border: var(--error-border);
+    --color-info-border: var(--info-border);
+    --color-error-text: var(--error-text);
+    --color-info-text: var(--info-text);
+    --spacing: var(--spacing-4);
+    --radius: var(--radius-md);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing);
+    margin: var(--spacing);
+    border-radius: var(--radius);
+}
+
+form .btn {
+    width: 100%;
+}
