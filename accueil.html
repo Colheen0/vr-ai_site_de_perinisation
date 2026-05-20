@@ -41,15 +41,25 @@
         </div>
     </div>
 
-    <form action="">
-        <input type="text" name="name" id="name" placeholder="Nom*" class="input">
-        <label for="name"></label>
-        <input type="email" name="email" id="email" placeholder="adresse mail*" class="input">
-        <label for="email"></label>
-        <input type="text" name="subject" id="subject" placeholder="Sujet*" class="input">
-        <label for="subject"></label>
-        <input type="text" name="message" id="message" placeholder="Message*" class="input">
-        <label for="message"></label>
+    <form action="" class="form-container">
+        <div class="input-group">
+            <input type="text" name="name" id="name" placeholder="Nom*" class="form-input">
+            <label for="name"></label>
+        </div>
+        
+        <div class="input-group">
+            <input type="email" name="email" id="email" placeholder="adresse mail*" class="form-input">
+            <label for="email"></label>
+            <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+            <input type="text" name="subject" id="subject" placeholder="Sujet*" class="form-input">
+            <label for="subject"></label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="message" id="message" placeholder="Message*" class="form-input form-textarea">
+            <label for="message"></label>
+        </div>
         <input type="submit" value="send" class="btn">
     </form>
 </body>

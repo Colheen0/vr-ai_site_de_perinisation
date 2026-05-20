@@ -1,24 +1,14 @@
 @import"variable.css";
 
-:root {
-    --color-error-bg: var(--error-bg);
-    --color-info-bg: var(--info-bg);
-    --color-error-border: var(--error-border);
-    --color-info-border: var(--info-border);
-    --color-error-text: var(--error-text);
-    --color-info-text: var(--info-text);
-    --spacing: var(--spacing-4);
-    --radius: var(--radius-md);
-}
-
-form {
+.form-container {
     display: flex;
     flex-direction: column;
-    padding: var(--spacing);
-    margin: var(--spacing);
-    border-radius: var(--radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4);
+    border-radius: var(--radius-md);
 }
 
-form .btn {
+.form-container .btn {
     width: 100%;
+    height: 38px;
 }

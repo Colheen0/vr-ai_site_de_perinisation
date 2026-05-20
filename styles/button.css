@@ -1,13 +1,5 @@
 @import "variables.css";
 
-:root {
-    --color: var(--primary-color);
-    --hover-color: var(--primary-color-hover);
-    --text-color-primary: var(--color-text-button-primary);
-    --spacing: var(--spacing-2);
-    --radius: var(--radius-md);
-}
-
 /*BOUTONS*/
 
     /*apparences*/
@@ -15,10 +7,10 @@
 .btn {
 width: 96px;
 height: 38px;
-background-color: var(--color);
-color: var(--text-color-primary);
-margin : var(--spacing);
-border-radius: var(--radius);
+background-color: var(--primary-color);
+color: var(--color-text-button-primary);
+margin : var(--spacing-2);
+border-radius: var(--radius-md);
 border: none;
 transition: background-color 0.3s ease;
 cursor: pointer;
@@ -28,13 +20,13 @@ cursor: pointer;
         /*Hover*/
 
 .btn:hover {
-background-color: var(--hover-color);
+background-color: var(--primary-color-hover);
 }   
 
         /*focus*/
 
 .btn:focus-visible {
-outline: 1px solid var(--text-color-primary);
+outline: 1px solid var(--color-text-button-primary);
 outline-offset: -2px;
 }
 /*
