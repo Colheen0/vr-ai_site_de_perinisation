@@ -13,7 +13,7 @@
 .input h2 {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-2);
-    
+
 }
 
 .input-text {
@@ -33,6 +33,7 @@
 .link {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: var(--spacing-4);
 }
 
@@ -55,6 +56,19 @@
 
 .card-container > .input {
     margin: 0;
+}
+
+.icon-arrow-svg {
+    height: 16px;
+    width: 16px;
+    -webkit-mask-image: url('/assets/svg/arrow.svg');
+    mask-image: url('/assets/svg/arrow.svg');
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    background-color: var(--text-secondary);
+    margin-left: var(--spacing-2);
 }
 
 
