@@ -6,6 +6,12 @@
     padding: var(--spacing-4);
     margin: var(--spacing-4);
     border-radius: var(--radius-md);
+    
+}
+
+form-container .input {
+    width: 100%;
+
 }
 
 .form-container .btn {

@@ -14,79 +14,14 @@
     margin-bottom: var(--spacing-2);
 }
 
-.lien {
+.link {
     display: flex;
     justify-content: flex-end;
 }
 
-.lien a {
+.link a {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: bold;
 }
-
-.input-group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: var(--spacing-4);
-}
-
-.form-input {
-    width: 100%;
-    background-color: var(--input-shortcut);
-    border: 2px solid var(--border-default);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-4);
-    margin: var(--spacing-4);
-    color: var(--text-primary);
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.form-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.form-label {
-    position: absolute;
-    left: var(--spacing-4);
-    top: var(--spacing-4);
-    color: var(--text-secondary);
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown) ~ .form-label {
-    top: 0.25rem;
-    font-size: 0.75rem;
-    color: var(--primary-color);
-}
-
-.form-input:focus,
-.form-input:not(:placeholder-shown) {
-    padding-top: calc(var(--spacing-4) + 0.5rem);
-    padding-bottom: calc(var(--spacing-4) - 0.5rem);
-}
-
-
-.error-message {
-    display: none;
-    color: var(--error-text);
-    font-size: 0.85rem;
-    margin-top: var(--spacing-1);
-}
-
-.form-input[type="email"]:invalid:not(:placeholder-shown):not(:focus) {
-    border-color: var(--error-border);
-    background-color: var(--error-bg);
-}
-
-.form-input[type="email"]:invalid:not(:placeholder-shown):not(:focus) ~ .error-message {
-    display: block; 
-}
-
 
