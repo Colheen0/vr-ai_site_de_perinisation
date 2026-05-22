@@ -1,27 +1,84 @@
-@import"variable.css";
 
+@import "variables.css";
+
+/* Input component */
 .input {
     background-color: var(--input-shortcut);
     border: 2px solid var(--border-default);
     border-radius: var(--radius-md);
-    padding: var(--spacing-6);
-    margin: var(--spacing-6);
     color: var(--text-primary);
+    margin: var(--spacing-4);
 }
 
 .input h2 {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-2);
+
+}
+
+.input-text {
+    margin: var(--spacing-6);
+}
+
+.input a,
+.link a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.input a {
+    margin: var(--spacing-2);
 }
 
 .link {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    margin: var(--spacing-4);
 }
 
 .link a {
-    color: var(--text-secondary);
-    text-decoration: none;
     font-weight: bold;
 }
+
+.input-a {
+    display: flex;
+    justify-content: center;
+}
+
+/* Card layout */
+.card-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4);
+}
+
+.card-container > .input {
+    margin: 0;
+}
+
+.icon-arrow-svg {
+    height: 16px;
+    width: 16px;
+    -webkit-mask-image: url('/assets/svg/arrow.svg');
+    mask-image: url('/assets/svg/arrow.svg');
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    background-color: var(--text-secondary);
+    margin-left: var(--spacing-2);
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 

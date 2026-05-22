@@ -14,8 +14,35 @@
     color: var(--info-text);
 }
 
+.icon-alert-svg {
+    height: 24px;
+    width: 24px;
+    -webkit-mask-image: url('/assets/svg/alert.svg');
+    mask-image: url('/assets/svg/alert.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    margin-right: var(--spacing-2);
+}
+
+.info .icon-alert-svg {
+    background-color: var(--info-text);
+
+}
+
+.error .icon-alert-svg {
+    background-color: var(--error-text);
+}
+
 .error {
     background-color: var(--error-bg);
     border: 2px solid var(--error-border);
     color: var(--error-text);
+}
+
+.error img {
+    margin-right: var(--spacing-2);
+    color: var(--error-bg);
 }
