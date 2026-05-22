@@ -1,35 +1,27 @@
 @import"variable.css";
 
-:root {
-    --color-card-bg: var(--input-shortcut);
-    --color-card-border: var(--border-default);
-    --color-card-text-title: var(--text-primary);
-    --color-card-text-body: var(--text-secondary);
-    --spacing: var(--spacing-6);
-    --radius: var(--radius-md);
-}
-
 .input {
-    background-color: var(--color-card-bg);
-    border: 2px solid var(--color-card-border);
-    border-radius: var(--radius);
-    padding: var(--spacing);
-    margin: var(--spacing);
-    color: var(--color-card-text-body);
+    background-color: var(--input-shortcut);
+    border: 2px solid var(--border-default);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-6);
+    margin: var(--spacing-6);
+    color: var(--text-primary);
 }
 
 .input h2 {
-    color: var(--color-card-text-title);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-2);
 }
 
-.lien {
+.link {
     display: flex;
     justify-content: flex-end;
 }
 
-.lien a {
-    color: var(--color-card-text-body);
+.link a {
+    color: var(--text-secondary);
     text-decoration: none;
     font-weight: bold;
 }
+
