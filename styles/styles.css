@@ -6,10 +6,23 @@
 @import "variables.css";
 
 
-:root {
-    --color-bg: var(--bg-default);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-body{
+html,
+body {
     background-color: var(--color-bg);
+    font-family: square-serif, sans-serif;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    min-height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
