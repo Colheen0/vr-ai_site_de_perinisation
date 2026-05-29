@@ -102,36 +102,39 @@
         
     </div>
 
-    <div class="input input-a">
-        <a href="">test ></a>
+    <div class="btn-link_container">
+        <a href="" class="btn-link">test ></a>
+        <a href="" class="btn-link disabled" aria-disabled="true">Disabled ></a>
     </div>
-    <form action="" class="form">
 
-        <label for="name">
-            <input type="text" id="name" name="name" required>
-            <span>Nom*</span>
-        </label>
+    <form action="" class="form" novalidate>
+    <p>Tout les champs sont obligatoires.</p>
 
-        <label for="email">
-            <input type="email" id="email" name="email" autocomplete="email" aria-required="true" aria-invalid="true" required>
-            <span>Email*</span> 
-            <p class="error-message">veuillez saisir une adresse email valide (jeandujardin@gmail.com)*</p>
-        </label>
+    <label for="name">
+        <input type="text" id="name" name="name" placeholder=" " required autocomplete="name">
+        <span>Nom</span>
+    </label>
 
-        <label for="subject">
-            <input type="text" id="subject" name="subject" required>
-            <span>Sujet*</span>
-        </label>
+    <label for="email">
+        <input type="email" id="email" name="email" placeholder=" " aria-invalid="false" autocomplete="email" required>
+        <span>Email</span>
+    </label>
+    <p id="errors" aria-live="assertive" class="error-summary"></p>
 
-        <label for="message">
-            <textarea placeholder="" name="message" id="message" required></textarea>
-            <span>Message*</span>
-        </label>
+    <label for="subject">
+        <input type="text" id="subject" name="subject" placeholder=" " required>
+        <span>Sujet</span>
+    </label>
 
-        <button class="btn" type="submit">Envoyer</button>
-    </form>
+    <label for="message">
+        <textarea id="message" name="message" placeholder=" " required></textarea>
+        <span>Message</span>
+    </label>
+
+    <button class="btn" type="submit">Envoyer</button>
+</form>
     <footer>
-        <a href="">logo</a>
+        <a href="" class="logo-link"><img src="/assets/svg/logoMetfordTigers.svg" alt="lien_accueil"></a>
         <p>Alibi - Atelier pédagogique</p>
         <p>Projet BUT MMI 2026-2027</p>
     </footer>
