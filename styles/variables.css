@@ -1,5 +1,11 @@
 :root {
 
+/*FONTS*/
+
+--font-heading: "SquareSerif-Demi", serif;
+--font-body: 'General Sans', sans-serif;
+
+
 /*SPACING*/
 
 --spacing-1: 0.25rem; /* 4px */
@@ -20,7 +26,7 @@
 --radius-xl: 1rem; /* 16px */
 --radius-full: 999px; /* 999px */
 
-/*COULEURS*/
+/*COLORS*/
 
 /*yellow*/
 --yellow-100: #fffaf0 ;
@@ -114,4 +120,5 @@
         --error-input: var(--red-600);
         --gradient: linear-gradient(180deg, var(--gradient-red-400) 0%, var(--gradient-red-500) 50%, var(--gradient-red-600) 100%);
 }
+
 

@@ -17,19 +17,3 @@
     margin: var(--spacing);
     color: var(--color-card-text-body);
 }
-
-.input h2 {
-    color: var(--color-card-text-title);
-    margin-bottom: var(--spacing-2);
-}
-
-.lien {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.lien a {
-    color: var(--color-card-text-body);
-    text-decoration: none;
-    font-weight: bold;
-}

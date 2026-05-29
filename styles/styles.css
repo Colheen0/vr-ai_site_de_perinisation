@@ -3,4 +3,34 @@
 @import "alert.css";
 @import "input.css";
 @import "form.css";
+@import "header.css";
 
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+body {
+    background-color: var(--bg-default);
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    padding: 0;
+    margin: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+[data-theme="dark"] .invert-on-dark {
+    filter: invert(1);
+}
